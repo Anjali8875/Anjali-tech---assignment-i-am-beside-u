@@ -1,6 +1,10 @@
+
+
 # Gemini AI Application
 
 A full-stack AI-powered application built with React (frontend) and Express.js (backend) that integrates with OpenAI's API to provide intelligent responses and assistance.
+
+![Screenshot](Screenshot%20(62).png)
 
 ## 🚀 Features
 
