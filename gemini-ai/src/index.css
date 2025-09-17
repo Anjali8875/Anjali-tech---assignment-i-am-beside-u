@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+
+@theme {
+  --animate-wiggle: wiggle 3s infinite;
+  @keyframes wiggle {
+    0% {
+      background-position: '-800px 0px'
+    }
+    100% {
+     background-position: '800px 0px'
+    }
+  }
+}
+
+.hide-scroll-thumb::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.hide-scroll-thumb {
+  scrollbar-color: transparent transparent; /* Firefox */
+}
+
+*{
+  box-sizing: border-box;
+  font-family:;
+}
+#root{
+   min-height: 100vh;
+   display: flex;
+}
+.ai-output h1, h2, h3 {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #333;
+}
+.ai-output p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+.ai-output ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+.ai-output pre {
+  background: #19191a;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  position: relative;
+}
+.copy-btn {
+  font-size: 12px;
+}
+.ai-output pre code {
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: #f1f4f1;
+}
+.ai-output .hljs-keyword { color: #ff007f; }
+.ai-output .hljs-string { color: #9cc700; }
+.ai-output .hljs-function { color: #ffae00; }
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;             
+}
