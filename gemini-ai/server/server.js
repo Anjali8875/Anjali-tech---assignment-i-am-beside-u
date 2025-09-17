@@ -16,6 +16,15 @@ app.use(
   })
 );
 
+// Check for required environment variables
+if (!process.env.OPENAI_API_KEY) {
+  console.error('❌ Error: OPENAI_API_KEY is not set in environment variables.');
+  console.error('📝 Please create a .env file in the server directory with:');
+  console.error('   OPENAI_API_KEY=your_actual_openai_api_key_here');
+  console.error('🔗 Get your API key from: https://platform.openai.com/api-keys');
+  process.exit(1);
+}
+
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 
@@ -94,5 +103,9 @@ app.post("/api/generate", async (req, res) => {
 
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log("Server running on port", process.env.PORT || 3000);
+  const port = process.env.PORT || 3000;
+  console.log(`🚀 Server running on port ${port}`);
+  console.log(`🌐 Backend API: http://localhost:${port}`);
+  console.log(`🎯 Make sure frontend is running on http://localhost:5173`);
+  console.log(`✅ OpenAI API key configured successfully`);
 });
