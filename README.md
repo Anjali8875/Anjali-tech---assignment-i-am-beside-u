@@ -1,10 +1,21 @@
+ 
+## 👤 Author & Institution
+- name: Anjali
+- University: IIT ISM Dhanbad
+- Department: Mechanical Engineering
 
-
- # AI PROTOTYPE
+# AI PROTOTYPE
 
 A full-stack AI-powered application built with React (frontend) and Express.js (backend) that integrates with OpenAI's API to provide intelligent responses and assistance.
 
+![Screenshot](Screenshot%20(73).png)
+
 ![Screenshot](Screenshot%20(62).png)
+
+## Demo Video Link
+``` bash
+https://drive.google.com/file/d/1aYXfpfwz13zbSuuAoBQ_UKuUIloaKqM_/view?usp=drivesdk
+```
 
 ## 🚀 Features
 
