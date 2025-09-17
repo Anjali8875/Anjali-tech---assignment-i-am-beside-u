@@ -18,6 +18,41 @@ Before running this application, make sure you have:
 - **npm** or **yarn** package manager
 - **OpenAI API Key** (get one from [OpenAI Platform](https://platform.openai.com/api-keys))
 
+## 💡 Use Cases / Problems This Project Solves
+ This AI assistant clone helps users with:
+ 
+### 🗓️ Daily Planning Suggestions
+Ask for a daily schedule or get smart reminders for tasks and events.
+
+### 🍽️ Activity-Based Recommendations
+Like suggesting when and where to go for dinner or hangouts.
+
+### 👨‍💻 Coding Assistance
+Instantly get solutions to programming problems like:
+
+```bash
+function bubbleSort(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = 0; j < arr.length - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+      }
+    }
+  }
+  return arr;
+}
+```
+### 📦 Structured JSON Responses
+AI gives output in readable JSON format when required, like:
+
+```bash
+{
+  "task": "Dinner plan",
+  "time": "8:00 PM",
+  "location": "Nearby Italian Restaurant",
+  "reminder_set": true
+}
+```
 ## 🛠️ Installation & Setup
 
 ### 1. Clone the Repository
